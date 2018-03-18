@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr" itemscope itemtype="https://schema.org/Person">
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113548728-1"></script>
+  <script>
+    function gtag () {
+      dataLayer.push(arguments);
+    }
+
+    function track(label) {
+      gtag('event', 'social_link_click', {
+        event_category: 'social',
+        event_label: label,
+        value: 1
+      });
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    gtag('js', new Date());
+    gtag('config', 'UA-113548728-1');
+
+    var background = new Image();
+
+    var documentLoaded = new Promise(function (resolve) {
+      document.addEventListener('DOMContentLoaded', resolve);
+    });
+
+    var backgroundLoaded = new Promise(function (resolve) {
+      background.onload = resolve;
+      background.src = 'https://static.tumblr.com/215037a2c32ec44f249928ca97fb1116/iycd0ya/POLoykp33/tumblr_static_rkfrx3y2alcg840kwccos8k4_2048_v2.jpg';
+    });
+
+    Promise.all([documentLoaded, backgroundLoaded]).then(function () {
+      document.getElementById('loading').remove();
+      document.getElementById('content').style = 'opacity: 1';
+    });
+  </script>
+
+  <title>camarao.io</title>
+  <meta name="description" content="Wagner Camarao, Software Engineer, Product UX" />
+  <meta name="keywords" content="software, engineer, engineering, development, web, mobile, app, application, javascript, typescript, js, node, node.js, java, python, ruby, go, golang, es5, es6, es7, eslint, tslint, npm, yarn, webpack, socket.io, websockets, vue, vue.js, react, redux, angular, d3, d3.js, html, css, tdd, bdd, unit testing, integration testing, e2e testing, unix, linux, os x, bash, zsh, shell, git, ci, open source, spring mvc, spring boot, django, rails, ruby on rails, sql, nosql, postgres, mysql, redis, riak, mongo, cloud, cloud native, saas, aws, cdn, 12 factor, devops, object oriented programming, functional programming, analytics, responsive, product, user experience" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+  <link href="https://assets.tumblr.com/fonts/gibson/stylesheet.css?v=3" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300" rel="stylesheet" />
+  <link rel="shortcut icon" href="https://78.media.tumblr.com/avatar_d6c976fb6f0f_128.png" />
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #000;
+      color: #fff;
+      margin: 0;
+    }
+
+    iframe {
+      display: none;
+    }
+
+    #content {
+      -webkit-transition: opacity .3s ease-out;
+      -moz-transition: opacity .3s ease-out;
+      -ms-transition: opacity .3s ease-out;
+      transition: opacity .3s ease-out;
+    }
+
+    .background {
+      background-image: url('https://static.tumblr.com/215037a2c32ec44f249928ca97fb1116/iycd0ya/POLoykp33/tumblr_static_rkfrx3y2alcg840kwccos8k4_2048_v2.jpg');
+      background-position: center center;
+      background-size: cover;
+      opacity: .6;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .social {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+    }
+
+    .social a {
+      display: inline-block;
+      text-decoration: none;
+      margin-right: 25px;
+      height: 35px;
+    }
+
+    .social a:last-child {
+      margin-right: 0;
+    }
+
+    .social a svg {
+      width: 35px;
+      height: 35px;
+      fill: #fff;
+
+      -webkit-transition: opacity .1s ease-out;
+      -moz-transition: opacity .1s ease-out;
+      -ms-transition: opacity .1s ease-out;
+      transition: opacity .1s ease-out;
+    }
+
+    .social a svg:hover {
+      opacity: .6;
+    }
+
+    .title {
+      position: absolute;
+      top: 48%;
+      left: 50%;
+
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
+    .title h1,
+    .title h2 {
+      white-space: nowrap;
+      margin: 0;
+    }
+
+    .title h1 {
+      font-family: 'Gibson', sans-serif;
+      font-size: 3.675em;
+      font-weight: normal;
+    }
+
+    .title h2 {
+      font-size: 1em;
+      font-weight: 300;
+    }
+
+    @media screen and (min-width: 600px) {
+      .title h1 {
+        font-size: 6em;
+        line-height: 1em;
+      }
+
+      .title h2 {
+        font-size: 1.66em;
+        font-weight: 100;
+      }
+    }
+
+    #loading {
+      width: 10rem;
+      height: 10rem;
+      position: absolute;
+      top: calc(50% - 5rem);
+      left: calc(50% - 5rem);
+
+      -webkit-animation: rotate 2s linear infinite;
+      -moz-animation: rotate 2s linear infinite;
+      -ms-animation: rotate 2s linear infinite;
+      animation: rotate 2s linear infinite;
+
+      -webkit-transform-origin: center center;
+      -moz-transform-origin: center center;
+      -ms-transform-origin: center center;
+      transform-origin: center center;
+    }
+
+    #loading circle {
+      stroke-dasharray: 150, 200;
+      stroke-dashoffset: -10;
+      stroke-linecap: round;
+
+      -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+      -moz-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+      -ms-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+      animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    }
+
+    @-webkit-keyframes rotate {
+      100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes rotate {
+      100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @-webkit-keyframes dash {
+      0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+      }
+
+      50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35;
+      }
+
+      100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124;
+      }
+    }
+
+    @keyframes dash {
+      0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+      }
+
+      50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35;
+      }
+
+      100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <svg id="loading" viewBox="25 25 50 50">
+    <circle cx="50" cy="50" r="20" fill="none" stroke="#333" stroke-width="2" />
+  </svg>
+
+  <section id="content" style="opacity: 0">
+    <main class="background"></main>
+
+    <nav class="social">
+      <a href="https://github.com/wcamarao" target="_blank" onclick="track('GitHub')">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+        </svg>
+      </a>
+
+      <a href="https://www.linkedin.com/in/wcamarao/" target="_blank" onclick="track('LinkedIn')">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+        </svg>
+      </a>
+
+      <a href="https://twitter.com/wcamarao" target="_blank" onclick="track('Twitter')">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+        </svg>
+      </a>
+    </nav>
+
+    <hgroup class="title">
+      <h1>camarao.io</h1>
+      <h2>Software Engineering &amp; Product UX</h2>
+    </hgroup>
+  </section>
+</body>
+
+</html>
+
